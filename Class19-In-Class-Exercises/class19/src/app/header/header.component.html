@@ -1,0 +1,28 @@
+<p>HEADER WORKS!!!</p>
+
+<!-- Exercise 2, 4 & 7: -->
+@if (showTitle) {<h1>{{ title }}
+
+</h1>
+  <p>Welcome to Angular</p>
+} @else {
+  <p>EXERCISES 2, 4, and 7 ARE COMPLETE!</p>
+}
+<p> {{ description }} </p>
+
+<input type="text" [(ngModel)]="inputText"
+placeholder="Type Something!">
+<button (click)="toggleMessage()">Submit</button>
+<p>This is what the user entered: {{ inputText }} </p>
+
+@if (showMessage) {
+  <p>I am a message that will only show if showMessage is true!</p>
+} @else {
+  <p>yeah!</p>
+}
+<br>
+<!-- Exercise 2, 4, 7: -->
+     <button class="change" (click)="changeTitle()">Change Title</button>
+<br>
+<br>
+<hr>
